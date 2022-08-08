@@ -1,0 +1,20 @@
+Thu 28/Jul/2022 09:23:51 EAT | Report Requested by Super User
+Thu 28/Jul/2022 09:23:51 EAT | Report in queue at position 1
+Thu 28/Jul/2022 09:23:51 EAT | Starting to process report...
+Thu 28/Jul/2022 09:23:51 EAT | Evaluating Report Data....
+Thu 28/Jul/2022 09:23:51 EAT | Evaluating TX CURR
+Thu 28/Jul/2022 09:23:51 EAT | Evaluating On Treatment Patients
+Thu 28/Jul/2022 09:23:51 EAT | Evaluating EncounterDataSetDefinition[columnDefinitions=Name,Age,Sex,Treatment End Date ,Encounter Type,rowFilters=Encounter]
+Thu 28/Jul/2022 09:23:51 EAT | Evaluating Encounter
+Thu 28/Jul/2022 09:23:51 EAT | Evaluating PersonToEncounterDataDefinition[joinedDefinition=PreferredNameDataDefinition]
+Thu 28/Jul/2022 09:23:51 EAT | Evaluating PreferredNameDataDefinition[]
+Thu 28/Jul/2022 09:23:51 EAT | Evaluating PersonToEncounterDataDefinition[joinedDefinition=AgeDataDefinition]
+Thu 28/Jul/2022 09:23:51 EAT | Evaluating AgeDataDefinition[]
+Thu 28/Jul/2022 09:23:51 EAT | Evaluating BirthdateDataDefinition[]
+Thu 28/Jul/2022 09:23:51 EAT | Evaluating VitalStatusDataDefinition[]
+Thu 28/Jul/2022 09:23:51 EAT | Evaluating PersonToEncounterDataDefinition[joinedDefinition=GenderDataDefinition]
+Thu 28/Jul/2022 09:23:51 EAT | Evaluating GenderDataDefinition[]
+Thu 28/Jul/2022 09:23:51 EAT | Evaluating ObsForEncounterDataDefinition[question=Treatment end date,singleObs=true]
+Thu 28/Jul/2022 09:23:51 EAT | Evaluating EncounterTypeDataDefinition[]
+Thu 28/Jul/2022 09:23:51 EAT | Caching Report Results....
+Thu 28/Jul/2022 09:23:51 EAT | Report Generation Completed in 0:00:00.159

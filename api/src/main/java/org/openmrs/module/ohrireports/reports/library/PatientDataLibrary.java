@@ -19,7 +19,6 @@ import org.openmrs.module.reporting.data.person.definition.GenderDataDefinition;
 import org.openmrs.module.reporting.data.person.definition.PersonDataDefinition;
 import org.openmrs.module.reporting.data.person.definition.PreferredNameDataDefinition;
 import org.openmrs.module.reporting.definition.library.BaseDefinitionLibrary;
-import org.openmrs.module.reporting.evaluation.parameter.Mapped;
 import org.springframework.stereotype.Component;
 
 @Component

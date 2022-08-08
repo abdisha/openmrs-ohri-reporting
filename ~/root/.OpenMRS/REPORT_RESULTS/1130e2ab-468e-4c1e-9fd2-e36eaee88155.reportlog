@@ -1,0 +1,16 @@
+Thu 28/Jul/2022 11:20:36 EAT | Report Requested by Super User
+Thu 28/Jul/2022 11:20:36 EAT | Report in queue at position 1
+Thu 28/Jul/2022 11:20:36 EAT | Starting to process report...
+Thu 28/Jul/2022 11:20:36 EAT | Evaluating Report Data....
+Thu 28/Jul/2022 11:20:36 EAT | Evaluating HTS Follow Up Report
+Thu 28/Jul/2022 11:20:36 EAT | Evaluating Patients Who Started ART From the Transferring Facility between date
+Thu 28/Jul/2022 11:20:36 EAT | Evaluating EncounterDataSetDefinition[columnDefinitions=Name,Age,Sex,ART Start Date ,Regimen,Encounter type,rowFilters=Encounter]
+Thu 28/Jul/2022 11:20:36 EAT | Evaluating Encounter
+Thu 28/Jul/2022 11:20:36 EAT | Evaluating PersonToEncounterDataDefinition[joinedDefinition=PreferredNameDataDefinition]
+Thu 28/Jul/2022 11:20:36 EAT | Evaluating PersonToEncounterDataDefinition[joinedDefinition=AgeDataDefinition]
+Thu 28/Jul/2022 11:20:36 EAT | Evaluating PersonToEncounterDataDefinition[joinedDefinition=GenderDataDefinition]
+Thu 28/Jul/2022 11:20:36 EAT | Evaluating ObsForEncounterDataDefinition[question=Antiretroviral treatment start date,singleObs=true]
+Thu 28/Jul/2022 11:20:36 EAT | Evaluating ObsForEncounterDataDefinition[question=Regimen,singleObs=true]
+Thu 28/Jul/2022 11:20:36 EAT | Evaluating EncounterTypeDataDefinition[]
+Thu 28/Jul/2022 11:20:36 EAT | Caching Report Results....
+Thu 28/Jul/2022 11:20:36 EAT | Report Generation Completed in 0:00:00.157

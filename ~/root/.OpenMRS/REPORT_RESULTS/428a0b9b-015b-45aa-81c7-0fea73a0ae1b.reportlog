@@ -1,0 +1,9 @@
+Tue 26/Jul/2022 09:45:29 EAT | Report Requested by Super User
+Tue 26/Jul/2022 09:45:29 EAT | Report in queue at position 1
+Tue 26/Jul/2022 09:45:29 EAT | Starting to process report...
+Tue 26/Jul/2022 09:45:29 EAT | Evaluating Report Data....
+Tue 26/Jul/2022 09:45:29 EAT | Evaluating HTS Report
+Tue 26/Jul/2022 09:45:29 EAT | Evaluating EncounterCohortDefinition[which ones=ANY,of types=null,null,find patients who do NOT have matching encounters=false]
+Tue 26/Jul/2022 09:45:29 EAT | Report Evaluation Failed
+Tue 26/Jul/2022 09:45:29 EAT | Writing the report error to disk
+Tue 26/Jul/2022 09:45:29 EAT | Report Generation Completed in 0:00:00.099

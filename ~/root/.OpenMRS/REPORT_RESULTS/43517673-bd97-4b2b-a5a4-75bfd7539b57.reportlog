@@ -1,0 +1,25 @@
+Tue 26/Jul/2022 11:53:53 EAT | Report Requested by Super User
+Tue 26/Jul/2022 11:53:53 EAT | Report in queue at position 1
+Tue 26/Jul/2022 11:53:53 EAT | Starting to process report...
+Tue 26/Jul/2022 11:53:53 EAT | Evaluating Report Data....
+Tue 26/Jul/2022 11:53:53 EAT | Evaluating HTS Follow Up Report
+Tue 26/Jul/2022 11:53:53 EAT | Evaluating Patients Who Started ART From the Transferring Facility between date
+Tue 26/Jul/2022 11:53:53 EAT | Evaluating EncounterDataSetDefinition[columnDefinitions=Name,Age,Sex,Follow Up Date ,Regimen,Status,Enc type,rowFilters=MappedParametersEncounterQuery [endDateGC -> ${endDateGC},startDateGC -> ${startDateGC}],MappedParametersEncounterQuery [endDateGC -> ${endDateGC},startDateGC -> ${startDateGC}]]
+Tue 26/Jul/2022 11:53:53 EAT | Evaluating MappedParametersEncounterQuery[wrapped=Encounter [onOrBefore -> ${${endDateGC}},onOrAfter -> ${${startDateGC}}]]
+Tue 26/Jul/2022 11:53:53 EAT | Evaluating Encounter
+Tue 26/Jul/2022 11:53:54 EAT | Evaluating MappedParametersEncounterQuery[wrapped=BasicEncounterQuery [onOrBefore -> ${${endDateGC}},onOrAfter -> ${${startDateGC}}]]
+Tue 26/Jul/2022 11:53:54 EAT | Evaluating BasicEncounterQuery[encounterTypes=EncounterType[hashCode=84363e3,uuid=136b2ded-22a3-4831-a39a-088d35a50ef5]]
+Tue 26/Jul/2022 11:53:54 EAT | Evaluating PersonToEncounterDataDefinition[joinedDefinition=PreferredNameDataDefinition]
+Tue 26/Jul/2022 11:53:54 EAT | Evaluating PreferredNameDataDefinition[]
+Tue 26/Jul/2022 11:53:54 EAT | Evaluating PersonToEncounterDataDefinition[joinedDefinition=AgeDataDefinition]
+Tue 26/Jul/2022 11:53:54 EAT | Evaluating AgeDataDefinition[]
+Tue 26/Jul/2022 11:53:54 EAT | Evaluating BirthdateDataDefinition[]
+Tue 26/Jul/2022 11:53:54 EAT | Evaluating VitalStatusDataDefinition[]
+Tue 26/Jul/2022 11:53:54 EAT | Evaluating PersonToEncounterDataDefinition[joinedDefinition=GenderDataDefinition]
+Tue 26/Jul/2022 11:53:54 EAT | Evaluating GenderDataDefinition[]
+Tue 26/Jul/2022 11:53:54 EAT | Evaluating EncounterDatetimeDataDefinition[]
+Tue 26/Jul/2022 11:53:54 EAT | Evaluating ObsForEncounterDataDefinition[question=Regimen,singleObs=true]
+Tue 26/Jul/2022 11:53:54 EAT | Evaluating ObsForEncounterDataDefinition[question=Reason eligible for antiretroviral therapy,singleObs=true]
+Tue 26/Jul/2022 11:53:54 EAT | Evaluating EncounterTypeDataDefinition[]
+Tue 26/Jul/2022 11:53:54 EAT | Caching Report Results....
+Tue 26/Jul/2022 11:53:54 EAT | Report Generation Completed in 0:00:00.325

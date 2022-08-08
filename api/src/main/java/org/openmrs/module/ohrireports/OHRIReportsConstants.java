@@ -20,6 +20,8 @@ public class OHRIReportsConstants {
 	
 	public final static String HTS_ENCOUNTER_TYPE = "30b849bd-c4f4-4254-a033-fe9cf01001d8";
 	
+	public final static String HTS_FOLLOW_UP_ENCOUNTER_TYPE = "136b2ded-22a3-4831-a39a-088d35a50ef5";
+	
 	public final static String COVID_VACCINATION_ENCOUNTER_TYPE = "5b37ce7a-c55e-4226-bdc8-5af04025a6de";
 	
 	public final static String HTS_RETROSPECTIVE_ENCOUNTER_TYPE = "79c1f50f-f77d-42e2-ad2a-d29304dde2fe";
@@ -48,9 +50,9 @@ public class OHRIReportsConstants {
 	public final static String CLIENTS_WITHOUT_COVID_19_OUTCOMES = "db6c4a18-28c6-423c-9da0-58d19e364a7f";
 	
 	public final static String COVID_CLIENTS_WITH_PENDING_LAB_RESULTS = "166aa2b1-ce55-4d16-9643-ca9d2e2694ea";
-
+	
 	public final static String ALL_PATIENTS_COHORT_UUID = "895d0025-84e2-4306-bdd9-66acc150ec21";
-
+	
 	/**
 	 * Associated Concepts
 	 */
@@ -218,15 +220,35 @@ public class OHRIReportsConstants {
 	
 	public final static String COVID19_LONG_COVID_DESCRIPTION = "4560c560-4bd6-4989-bff8-6e4e1fa39972";
 	
+	public final static String ART_START_DATE = "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+	
+	public final static String TRANSFERE_IN = "160563AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+	
+	public final static String REASON_FOR_ART_ELIGABLITY = "162225AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+	
+	public final static String FOLLOW_UP_DATE = "163137AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+	
+	public final static String REGIMEN = "6d7d0327-e1f8-4246-bfe5-be1e82d94b14";
+	
+	public final static String TREATMENT_END_DATE = "164384AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+	
 	/**
 	 * Reports
 	 */
 	public final static String HTS_REPORT_UUID = "3ffa5a53-fc65-4a1e-a434-46dbcf1c2de2";
+	
+	public final static String HTS_FOLLOW_UP_REPORT_UUID = "136b2ded-22a3-4831-a39a-088d35a50ef5";
 	
 	public final static String HTS_REPORT_DESIGN_UUID = "13aae526-a565-489f-b529-b1d96cca5f7c";
 	
 	public final static String COVID19_REPORT_UUID = "ecabd559-14f6-4c65-87af-1254dfdf1304";
 	
 	public final static String COVID19_REPORT_DESIGN_UUID = "4e33bb15-ac1c-4e82-a863-77cb705c6512";
+	
+	public final static String PATIENT_STATUS = "160433AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+	
+	public final static String ALIVE = "160429AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+	
+	public final static String RESTART = "ee957295-85b9-4433-bf12-45886cdc7dd1";
 	
 }
