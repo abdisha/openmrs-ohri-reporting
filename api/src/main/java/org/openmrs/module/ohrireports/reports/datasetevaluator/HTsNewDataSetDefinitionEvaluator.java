@@ -2,6 +2,7 @@ package org.openmrs.module.ohrireports.reports.datasetevaluator;
 
 import static org.openmrs.module.ohrireports.OHRIReportsConstants.*;
 
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -12,6 +13,8 @@ import org.openmrs.Obs;
 import org.openmrs.Person;
 import org.openmrs.annotation.Handler;
 import org.openmrs.api.ConceptService;
+import org.openmrs.module.ohrireports.helper.EthiopianDate;
+import org.openmrs.module.ohrireports.helper.EthiopianDateConverter;
 import org.openmrs.module.ohrireports.reports.datasetdefinition.HtsNewDataSetDefinition;
 import org.openmrs.module.reporting.dataset.DataSet;
 import org.openmrs.module.reporting.dataset.DataSetColumn;
@@ -51,11 +54,21 @@ public class HTsNewDataSetDefinitionEvaluator implements DataSetEvaluator {
 
             if(!managObses.contains(obs.getPerson())){
                 row = new DataSetRow();
+				EthiopianDate ethiopianDate = null;
+				try {
+					ethiopianDate=	EthiopianDateConverter.ToEthiopianDate(obs.getValueDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate() );
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
                 row.addColumnValue(new DataSetColumn("PersonID", "#", Integer.class), obs.getPersonId());
                 row.addColumnValue(new DataSetColumn("Name", "Name", String.class), obs.getPerson().getNames());
                 row.addColumnValue(new DataSetColumn("Age", "Age", Integer.class), obs.getPerson().getAge());
                 row.addColumnValue(new DataSetColumn("Gender", "Gender", Integer.class), obs.getPerson().getGender());
-                row.addColumnValue(new DataSetColumn("ArtStartDate", "Art StartDate", Date.class), obs.getValueDate());
+                row.addColumnValue(new DataSetColumn("ArtStartDate", "Art Start Date", Date.class), obs.getValueDate());
+                row.addColumnValue(new DataSetColumn("ArtStartDateEth", "Art Start Date ETH", 
+				String.class),ethiopianDate.equals(null)? "": ethiopianDate.getDay()+"/"+ethiopianDate.getMonth()+"/"+ethiopianDate.getYear());
+				row.addColumnValue(new DataSetColumn("ArtStartDate", "Art StartDate", Date.class), obs.getValueDate());
                 row.addColumnValue(new DataSetColumn("Encounter", "Encounter Type", String.class), obs.getEncounter().getEncounterType().getName());
 				row.addColumnValue(new DataSetColumn("Regimen","Regmin",String.class), getRegmin(obs,evalContext));
                 managObses.add(obs.getPerson());

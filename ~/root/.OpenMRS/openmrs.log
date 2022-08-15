@@ -1,338 +1,105 @@
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:04,948| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: legacyui.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:04,973| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:04,977| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: legacyui.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:04,979| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:05,177| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: ohricore.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:05,179| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:05,181| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: ohricore.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:05,183| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:05,592| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: fhir2.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:05,594| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:05,596| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: fhir2.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:05,598| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:05,636| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: spa.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:05,639| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:05,644| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: spa.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:05,651| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:05,696| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingcompatibility.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:05,698| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:05,701| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingcompatibility.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:05,705| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:05,829| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: webservices.rest.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:05,832| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:05,834| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: webservices.rest.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:05,836| Exiting method saveGlobalProperty
-WARN - ModuleFactory.startModuleInternal(788) |2022-08-08T14:41:05,943| Error while trying to start module: cohort
-org.openmrs.module.ModuleException: Unable to update data model using liquibase.xml. Module: Cohort Module
-	at org.openmrs.module.ModuleFactory.runLiquibase(ModuleFactory.java:997) ~[openmrs-api-2.4.0.jar:?]
-	at org.openmrs.module.ModuleFactory.startModuleInternal(ModuleFactory.java:728) [openmrs-api-2.4.0.jar:?]
-	at org.openmrs.api.context.Daemon$1.run(Daemon.java:80) [openmrs-api-2.4.0.jar:?]
-Caused by: liquibase.exception.ChangeLogParseException: liquibase.exception.SetupException: Error parsing line 14 column 150 of liquibase/3.x-liquibase-changeSet.xml: schema_reference.4: Failed to read schema document 'https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:25) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:216) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1234) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1227) ~[liquibase-core-3.10.2.jar:?]
-	at org.openmrs.util.DatabaseUpdater.executeChangelog(DatabaseUpdater.java:212) ~[openmrs-api-2.4.0.jar:?]
-	at org.openmrs.module.ModuleFactory.runLiquibase(ModuleFactory.java:989) ~[openmrs-api-2.4.0.jar:?]
-	... 2 more
-Caused by: liquibase.exception.SetupException: Error parsing line 14 column 150 of liquibase/3.x-liquibase-changeSet.xml: schema_reference.4: Failed to read schema document 'https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.
-	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:356) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:305) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:23) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:216) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1234) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1227) ~[liquibase-core-3.10.2.jar:?]
-	at org.openmrs.util.DatabaseUpdater.executeChangelog(DatabaseUpdater.java:212) ~[openmrs-api-2.4.0.jar:?]
-	at org.openmrs.module.ModuleFactory.runLiquibase(ModuleFactory.java:989) ~[openmrs-api-2.4.0.jar:?]
-	... 2 more
-Caused by: liquibase.exception.ChangeLogParseException: Error parsing line 14 column 150 of liquibase/3.x-liquibase-changeSet.xml: schema_reference.4: Failed to read schema document 'https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.
-	at liquibase.parser.core.xml.XMLChangeLogSAXParser.parseToNode(XMLChangeLogSAXParser.java:120) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:15) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:565) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:348) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:305) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:23) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:216) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1234) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1227) ~[liquibase-core-3.10.2.jar:?]
-	at org.openmrs.util.DatabaseUpdater.executeChangelog(DatabaseUpdater.java:212) ~[openmrs-api-2.4.0.jar:?]
-	at org.openmrs.module.ModuleFactory.runLiquibase(ModuleFactory.java:989) ~[openmrs-api-2.4.0.jar:?]
-	... 2 more
-Caused by: org.xml.sax.SAXParseException: schema_reference.4: Failed to read schema document 'https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.
-	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.util.ErrorHandlerWrapper.warning(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.xs.traversers.XSDHandler.reportSchemaWarning(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.traversers.XSDHandler.getSchemaDocument1(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.traversers.XSDHandler.getSchemaDocument(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.traversers.XSDHandler.parseSchema(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaLoader.loadSchema(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaValidator.findSchemaGrammar(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaValidator.handleStartElement(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaValidator.startElement(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElementAfterName(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLNSDocumentScannerImpl$NSContentDispatcher.scanRootElementHook(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at liquibase.parser.core.xml.XMLChangeLogSAXParser.parseToNode(XMLChangeLogSAXParser.java:112) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:15) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:565) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:348) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:305) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:23) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:216) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1234) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1227) ~[liquibase-core-3.10.2.jar:?]
-	at org.openmrs.util.DatabaseUpdater.executeChangelog(DatabaseUpdater.java:212) ~[openmrs-api-2.4.0.jar:?]
-	at org.openmrs.module.ModuleFactory.runLiquibase(ModuleFactory.java:989) ~[openmrs-api-2.4.0.jar:?]
-	... 2 more
-Caused by: java.net.UnknownHostException: www.liquibase.org
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:229) ~[?:?]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:?]
-	at java.net.Socket.connect(Socket.java:609) ~[?:?]
-	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:305) ~[?:?]
-	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173) ~[?:?]
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:182) ~[?:?]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:508) ~[?:?]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
-	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:266) ~[?:?]
-	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:373) ~[?:?]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:207) ~[?:?]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187) ~[?:?]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081) ~[?:?]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1592) ~[?:?]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520) ~[?:?]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250) ~[?:?]
-	at org.apache.xerces.impl.XMLEntityManager.setupCurrentEntity(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLVersionDetector.determineDocVersion(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.xs.opti.SchemaParsingConfig.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.opti.SchemaParsingConfig.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.opti.SchemaDOMParser.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.traversers.XSDHandler.getSchemaDocument(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.traversers.XSDHandler.parseSchema(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaLoader.loadSchema(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaValidator.findSchemaGrammar(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaValidator.handleStartElement(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaValidator.startElement(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElementAfterName(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLNSDocumentScannerImpl$NSContentDispatcher.scanRootElementHook(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at liquibase.parser.core.xml.XMLChangeLogSAXParser.parseToNode(XMLChangeLogSAXParser.java:112) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:15) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:565) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:348) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:305) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:23) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:216) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1234) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1227) ~[liquibase-core-3.10.2.jar:?]
-	at org.openmrs.util.DatabaseUpdater.executeChangelog(DatabaseUpdater.java:212) ~[openmrs-api-2.4.0.jar:?]
-	at org.openmrs.module.ModuleFactory.runLiquibase(ModuleFactory.java:989) ~[openmrs-api-2.4.0.jar:?]
-	... 2 more
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,063| In method AlertService.saveAlert. Arguments: Alert=Alert: #null, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,077| Exiting method saveAlert
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,110| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: serialization.xstream.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,111| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,113| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: serialization.xstream.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,116| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,219| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uiframework.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,221| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,224| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uiframework.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,226| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,346| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uicommons.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,348| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,351| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uicommons.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,353| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,444| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: addresshierarchy.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,447| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,449| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: addresshierarchy.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,451| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,484| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlwidgets.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,486| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,488| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlwidgets.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,490| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,505| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,506| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,509| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,511| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,666| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: openconceptlab.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,670| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,675| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: openconceptlab.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,678| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,821| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatamapping.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,823| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,826| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatamapping.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,828| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,948| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatasharing.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,950| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:06,953| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatasharing.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:06,955| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:07,098| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentry.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:07,101| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:07,104| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentry.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:07,105| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:07,240| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: initializer.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:07,242| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:07,244| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: initializer.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:07,246| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:07,349| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: calculation.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:07,351| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:07,353| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: calculation.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:07,355| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:07,660| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reporting.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:07,662| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:07,665| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reporting.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:07,668| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:07,823| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingrest.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:07,825| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:07,827| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingrest.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:07,829| Exiting method saveGlobalProperty
-ERROR - ModuleFactory.startModules(257) |2022-08-08T14:41:07,830| Module OHRI Reports cannot be started because it requires the following module(s): cohort 3.0.0-SNAPSHOT Please install and start these modules first.
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:07,851| In method AlertService.saveAlert. Arguments: Alert=Alert: #null, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:07,854| Exiting method saveAlert
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:07,996| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appframework.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:07,998| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:08,000| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appframework.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:08,002| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:08,099| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appui.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:08,101| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:08,103| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appui.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:08,105| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:41:08,387| In method SchedulerService.saveToMemento. Arguments: 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:41:08,392| Exiting method saveToMemento
-INFO - EhCacheManagerFactoryBean.destroy(192) |2022-08-08T14:41:08,421| Shutting down EhCache CacheManager
-INFO - ServiceContext.startRefreshingContext(822) |2022-08-08T14:41:08,422| Refreshing Context
-INFO - ServiceContext.doneRefreshingContext(833) |2022-08-08T14:41:22,511| Done refreshing Context
-WARN - ModuleFactory.startModuleInternal(788) |2022-08-08T14:43:43,333| Error while trying to start module: cohort
-org.openmrs.module.ModuleException: Unable to update data model using liquibase.xml. Module: Cohort Module
-	at org.openmrs.module.ModuleFactory.runLiquibase(ModuleFactory.java:997) ~[openmrs-api-2.4.0.jar:?]
-	at org.openmrs.module.ModuleFactory.startModuleInternal(ModuleFactory.java:728) [openmrs-api-2.4.0.jar:?]
-	at org.openmrs.api.context.Daemon$1.run(Daemon.java:80) [openmrs-api-2.4.0.jar:?]
-Caused by: liquibase.exception.ChangeLogParseException: liquibase.exception.SetupException: Error parsing line 14 column 150 of liquibase/3.x-liquibase-changeSet.xml: schema_reference.4: Failed to read schema document 'https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:25) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:216) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1234) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1227) ~[liquibase-core-3.10.2.jar:?]
-	at org.openmrs.util.DatabaseUpdater.executeChangelog(DatabaseUpdater.java:212) ~[openmrs-api-2.4.0.jar:?]
-	at org.openmrs.module.ModuleFactory.runLiquibase(ModuleFactory.java:989) ~[openmrs-api-2.4.0.jar:?]
-	... 2 more
-Caused by: liquibase.exception.SetupException: Error parsing line 14 column 150 of liquibase/3.x-liquibase-changeSet.xml: schema_reference.4: Failed to read schema document 'https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.
-	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:356) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:305) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:23) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:216) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1234) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1227) ~[liquibase-core-3.10.2.jar:?]
-	at org.openmrs.util.DatabaseUpdater.executeChangelog(DatabaseUpdater.java:212) ~[openmrs-api-2.4.0.jar:?]
-	at org.openmrs.module.ModuleFactory.runLiquibase(ModuleFactory.java:989) ~[openmrs-api-2.4.0.jar:?]
-	... 2 more
-Caused by: liquibase.exception.ChangeLogParseException: Error parsing line 14 column 150 of liquibase/3.x-liquibase-changeSet.xml: schema_reference.4: Failed to read schema document 'https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.
-	at liquibase.parser.core.xml.XMLChangeLogSAXParser.parseToNode(XMLChangeLogSAXParser.java:120) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:15) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:565) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:348) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:305) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:23) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:216) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1234) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1227) ~[liquibase-core-3.10.2.jar:?]
-	at org.openmrs.util.DatabaseUpdater.executeChangelog(DatabaseUpdater.java:212) ~[openmrs-api-2.4.0.jar:?]
-	at org.openmrs.module.ModuleFactory.runLiquibase(ModuleFactory.java:989) ~[openmrs-api-2.4.0.jar:?]
-	... 2 more
-Caused by: org.xml.sax.SAXParseException: schema_reference.4: Failed to read schema document 'https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd', because 1) could not find the document; 2) the document could not be read; 3) the root element of the document is not <xsd:schema>.
-	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.util.ErrorHandlerWrapper.warning(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.xs.traversers.XSDHandler.reportSchemaWarning(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.traversers.XSDHandler.getSchemaDocument1(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.traversers.XSDHandler.getSchemaDocument(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.traversers.XSDHandler.parseSchema(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaLoader.loadSchema(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaValidator.findSchemaGrammar(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaValidator.handleStartElement(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaValidator.startElement(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElementAfterName(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLNSDocumentScannerImpl$NSContentDispatcher.scanRootElementHook(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at liquibase.parser.core.xml.XMLChangeLogSAXParser.parseToNode(XMLChangeLogSAXParser.java:112) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:15) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:565) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:348) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:305) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:23) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:216) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1234) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1227) ~[liquibase-core-3.10.2.jar:?]
-	at org.openmrs.util.DatabaseUpdater.executeChangelog(DatabaseUpdater.java:212) ~[openmrs-api-2.4.0.jar:?]
-	at org.openmrs.module.ModuleFactory.runLiquibase(ModuleFactory.java:989) ~[openmrs-api-2.4.0.jar:?]
-	... 2 more
-Caused by: java.net.UnknownHostException: www.liquibase.org
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:229) ~[?:?]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:?]
-	at java.net.Socket.connect(Socket.java:609) ~[?:?]
-	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:305) ~[?:?]
-	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173) ~[?:?]
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:182) ~[?:?]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:508) ~[?:?]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[?:?]
-	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:266) ~[?:?]
-	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:373) ~[?:?]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:207) ~[?:?]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1187) ~[?:?]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1081) ~[?:?]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1592) ~[?:?]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1520) ~[?:?]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250) ~[?:?]
-	at org.apache.xerces.impl.XMLEntityManager.setupCurrentEntity(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLVersionDetector.determineDocVersion(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.xs.opti.SchemaParsingConfig.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.opti.SchemaParsingConfig.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.opti.SchemaDOMParser.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.traversers.XSDHandler.getSchemaDocument(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.traversers.XSDHandler.parseSchema(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaLoader.loadSchema(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaValidator.findSchemaGrammar(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaValidator.handleStartElement(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.xs.XMLSchemaValidator.startElement(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElementAfterName(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLNSDocumentScannerImpl$NSContentDispatcher.scanRootElementHook(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source) ~[xercesImpl-2.12.0.jar:2.12.0]
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source) ~[xercesImpl-2.12.0.jar:?]
-	at liquibase.parser.core.xml.XMLChangeLogSAXParser.parseToNode(XMLChangeLogSAXParser.java:112) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:15) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:565) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:348) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:305) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:23) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:216) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1234) ~[liquibase-core-3.10.2.jar:?]
-	at liquibase.Liquibase.listUnrunChangeSets(Liquibase.java:1227) ~[liquibase-core-3.10.2.jar:?]
-	at org.openmrs.util.DatabaseUpdater.executeChangelog(DatabaseUpdater.java:212) ~[openmrs-api-2.4.0.jar:?]
-	at org.openmrs.module.ModuleFactory.runLiquibase(ModuleFactory.java:989) ~[openmrs-api-2.4.0.jar:?]
-	... 2 more
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:44,496| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: legacyui.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:44,519| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:44,522| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: legacyui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:44,524| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:44,690| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: ohricore.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:44,691| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:44,694| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: ohricore.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:44,696| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,131| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: fhir2.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,133| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,135| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: fhir2.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,136| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,166| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: spa.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,168| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,170| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: spa.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,175| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,213| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingcompatibility.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,215| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,217| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingcompatibility.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,219| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,304| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: webservices.rest.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,306| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,308| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: webservices.rest.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,311| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,419| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: cohort.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,421| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,423| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: cohort.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,424| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,438| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: serialization.xstream.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,439| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,442| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: serialization.xstream.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,445| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,556| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uiframework.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,558| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,560| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uiframework.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,562| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,677| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uicommons.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,679| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,682| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uicommons.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,684| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,696| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlwidgets.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,697| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,699| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlwidgets.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,700| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,797| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: addresshierarchy.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,798| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,800| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: addresshierarchy.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,801| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,831| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,833| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,835| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,837| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,973| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: openconceptlab.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,975| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:45,978| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: openconceptlab.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:45,980| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:46,106| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatamapping.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:46,107| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:46,109| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatamapping.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:46,111| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:46,214| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatasharing.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:46,215| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:46,217| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatasharing.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:46,218| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:46,343| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentry.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:46,345| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:46,347| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentry.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:46,349| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:46,490| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: initializer.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:46,491| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:46,493| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: initializer.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:46,495| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:46,569| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: calculation.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:46,571| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:46,573| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: calculation.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:46,574| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:46,848| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reporting.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:46,850| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:46,852| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reporting.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:46,853| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:46,970| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingrest.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:46,971| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:46,973| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingrest.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:46,974| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:47,043| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: ohrireports.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:47,045| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:47,046| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: ohrireports.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:47,048| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:47,132| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appframework.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:47,133| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:47,135| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appframework.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:47,136| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:47,215| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appui.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:47,216| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:47,218| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:47,219| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T17:34:47,545| In method SchedulerService.saveToMemento. Arguments: 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T17:34:47,556| Exiting method saveToMemento
+INFO - EhCacheManagerFactoryBean.destroy(192) |2022-08-11T17:34:47,584| Shutting down EhCache CacheManager
+INFO - ServiceContext.startRefreshingContext(822) |2022-08-11T17:34:47,585| Refreshing Context
+INFO - ServiceContext.doneRefreshingContext(833) |2022-08-11T17:35:00,163| Done refreshing Context
+INFO - ServiceContext.startRefreshingContext(822) |2022-08-11T17:36:38,764| Refreshing Context
+INFO - ServiceContext.doneRefreshingContext(833) |2022-08-11T17:36:47,442| Done refreshing Context
+INFO - ServiceContext.startRefreshingContext(822) |2022-08-11T17:41:09,346| Refreshing Context
+INFO - ServiceContext.doneRefreshingContext(833) |2022-08-11T17:41:19,425| Done refreshing Context

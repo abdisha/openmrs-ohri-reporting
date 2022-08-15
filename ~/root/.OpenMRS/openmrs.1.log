@@ -1,101 +1,103 @@
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:46,717| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: legacyui.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:46,751| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:46,756| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: legacyui.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:46,763| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:46,968| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: ohricore.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:46,971| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:46,974| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: ohricore.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:46,977| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:47,441| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: fhir2.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:47,445| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:47,448| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: fhir2.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:47,451| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:47,491| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: spa.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:47,493| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:47,497| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: spa.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:47,504| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:47,548| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingcompatibility.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:47,550| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:47,553| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingcompatibility.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:47,556| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:47,646| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: webservices.rest.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:47,647| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:47,650| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: webservices.rest.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:47,652| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:49,832| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: cohort.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:49,834| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:49,835| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: cohort.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:49,837| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:49,851| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: serialization.xstream.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:49,853| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:49,857| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: serialization.xstream.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:49,860| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:49,984| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uiframework.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:49,986| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:49,988| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uiframework.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:49,990| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,103| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uicommons.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,106| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,108| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uicommons.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,110| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,203| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: addresshierarchy.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,206| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,208| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: addresshierarchy.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,210| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,242| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlwidgets.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,243| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,245| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlwidgets.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,247| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,261| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,263| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,266| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,267| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,398| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: openconceptlab.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,401| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,403| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: openconceptlab.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,405| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,556| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatamapping.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,558| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,561| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatamapping.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,563| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,674| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatasharing.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,677| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,680| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatasharing.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,682| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,815| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentry.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,817| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,820| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentry.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,823| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,974| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: initializer.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,976| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:50,978| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: initializer.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:50,980| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:51,049| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: calculation.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:51,050| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:51,052| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: calculation.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:51,054| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:51,380| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reporting.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:51,382| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:51,385| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reporting.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:51,387| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:51,509| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingrest.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:51,511| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:51,513| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingrest.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:51,514| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:51,599| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: ohrireports.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:51,600| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:51,602| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: ohrireports.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:51,604| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:51,694| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appframework.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:51,696| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:51,699| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appframework.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:51,700| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:51,784| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appui.started value: true, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:51,786| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:51,788| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appui.mandatory value: false, 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:51,790| Exiting method saveGlobalProperty
-INFO - LoggingAdvice.invoke(117) |2022-08-08T14:39:52,033| In method SchedulerService.saveToMemento. Arguments: 
-INFO - LoggingAdvice.invoke(157) |2022-08-08T14:39:52,043| Exiting method saveToMemento
-INFO - EhCacheManagerFactoryBean.destroy(192) |2022-08-08T14:39:52,076| Shutting down EhCache CacheManager
-INFO - ServiceContext.startRefreshingContext(822) |2022-08-08T14:39:52,078| Refreshing Context
-INFO - ServiceContext.doneRefreshingContext(833) |2022-08-08T14:40:04,129| Done refreshing Context
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:18,742| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: legacyui.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:18,772| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:18,775| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: legacyui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:18,778| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:18,928| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: ohricore.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:18,930| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:18,933| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: ohricore.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:18,936| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,371| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: fhir2.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,376| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,383| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: fhir2.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,386| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,430| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: spa.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,433| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,436| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: spa.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,441| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,484| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingcompatibility.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,487| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,490| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingcompatibility.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,491| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,590| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: webservices.rest.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,592| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,595| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: webservices.rest.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,597| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,710| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: cohort.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,712| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,715| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: cohort.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,717| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,732| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: serialization.xstream.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,733| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,737| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: serialization.xstream.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,740| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,847| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uiframework.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,849| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,852| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uiframework.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,854| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,968| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uicommons.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,971| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:19,974| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uicommons.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:19,977| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,072| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: addresshierarchy.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,074| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,077| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: addresshierarchy.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,079| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,123| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlwidgets.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,125| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,127| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlwidgets.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,129| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,143| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,145| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,148| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,150| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,288| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: openconceptlab.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,290| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,292| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: openconceptlab.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,294| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,431| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatamapping.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,433| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,436| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatamapping.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,437| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,547| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatasharing.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,548| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,551| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatasharing.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,553| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,745| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentry.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,747| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,750| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentry.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,752| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,894| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: initializer.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,897| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:20,900| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: initializer.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:20,902| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:21,022| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: calculation.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:21,023| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:21,025| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: calculation.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:21,027| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:21,272| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reporting.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:21,274| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:21,276| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reporting.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:21,278| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:21,438| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingrest.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:21,440| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:21,442| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingrest.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:21,443| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:21,590| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: ohrireports.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:21,593| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:21,595| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: ohrireports.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:21,597| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:21,695| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appframework.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:21,700| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:21,703| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appframework.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:21,706| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:21,822| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appui.started value: true, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:21,823| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:21,825| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:21,826| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(117) |2022-08-11T14:51:22,080| In method SchedulerService.saveToMemento. Arguments: 
+INFO - LoggingAdvice.invoke(157) |2022-08-11T14:51:22,090| Exiting method saveToMemento
+INFO - EhCacheManagerFactoryBean.destroy(192) |2022-08-11T14:51:22,122| Shutting down EhCache CacheManager
+INFO - ServiceContext.startRefreshingContext(822) |2022-08-11T14:51:22,124| Refreshing Context
+INFO - ServiceContext.doneRefreshingContext(833) |2022-08-11T14:51:33,459| Done refreshing Context
+INFO - ServiceContext.startRefreshingContext(822) |2022-08-11T14:58:34,322| Refreshing Context
+INFO - ServiceContext.doneRefreshingContext(833) |2022-08-11T14:58:42,643| Done refreshing Context
