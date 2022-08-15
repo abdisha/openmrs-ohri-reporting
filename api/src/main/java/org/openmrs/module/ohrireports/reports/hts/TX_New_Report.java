@@ -28,22 +28,22 @@ import static org.openmrs.module.ohrireports.OHRIReportsConstants.HTS_FOLLOW_UP_
 
 @Component
 public class TX_New_Report implements ReportManager {
-
+	
 	@Override
 	public String getUuid() {
 		return "4e29b77f-eedd-4486-9f08-be039a894ff7";
 	}
-
+	
 	@Override
 	public String getName() {
 		return "TX New";
 	}
-
+	
 	@Override
 	public String getDescription() {
 		return null;
 	}
-
+	
 	@Override
 	public List<Parameter> getParameters() {
 		Parameter startDate = new Parameter("startDate", "Start Date", Date.class);
@@ -55,9 +55,9 @@ public class TX_New_Report implements ReportManager {
 		Parameter endDateGC = new Parameter("endDateGC", " ", Date.class);
 		endDateGC.setRequired(false);
 		return Arrays.asList(startDate, startDateGC, endDate, endDateGC);
-
+		
 	}
-
+	
 	@Override
 	public ReportDefinition constructReportDefinition() {
 		ReportDefinition reportDefinition = new ReportDefinition();
@@ -65,16 +65,16 @@ public class TX_New_Report implements ReportManager {
 		reportDefinition.setName(getName());
 		reportDefinition.setDescription(getDescription());
 		reportDefinition.setParameters(getParameters());
-
+		
 		HtsNewDataSetDefinition htsNewDataSetDefinition = new HtsNewDataSetDefinition();
 		htsNewDataSetDefinition.addParameters(getParameters());
 		htsNewDataSetDefinition.setEncounterType(Context.getEncounterService().getEncounterTypeByUuid(
-				HTS_FOLLOW_UP_ENCOUNTER_TYPE));
+		    HTS_FOLLOW_UP_ENCOUNTER_TYPE));
 		reportDefinition.addDataSetDefinition("TX-New",
-				map(htsNewDataSetDefinition, "startDate=${startDateGC},endDate=${endDateGC}"));
+		    map(htsNewDataSetDefinition, "startDate=${startDateGC},endDate=${endDateGC}"));
 		return reportDefinition;
 	}
-
+	
 	public static <T extends Parameterizable> Mapped<T> map(T parameterizable, String mappings) {
 		if (parameterizable == null) {
 			throw new IllegalArgumentException("Parameterizable cannot be null");
@@ -84,24 +84,24 @@ public class TX_New_Report implements ReportManager {
 		}
 		return new Mapped<T>(parameterizable, ParameterizableUtil.createParameterMappings(mappings));
 	}
-
+	
 	@Override
 	public List<ReportDesign> constructReportDesigns(ReportDefinition reportDefinition) {
 		// ReportDesign design =
 		// ReportManagerUtil.createCsvReportDesign(HTS_REPORT_DESIGN_UUID,
 		// reportDefinition);
-
+		
 		return null;
 	}
-
+	
 	@Override
 	public List<ReportRequest> constructScheduledRequests(ReportDefinition reportDefinition) {
 		return null;
 	}
-
+	
 	@Override
 	public String getVersion() {
 		return "1.0.0-SNAPSHOT";
 	}
-
+	
 }

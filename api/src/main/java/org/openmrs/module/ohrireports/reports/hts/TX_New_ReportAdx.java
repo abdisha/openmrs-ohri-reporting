@@ -9,19 +9,13 @@
  */
 package org.openmrs.module.ohrireports.reports.hts;
 
-import static org.openmrs.module.ohrireports.OHRIReportsConstants.HTS_FOLLOW_UP_ENCOUNTER_TYPE;
-
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
-import org.openmrs.api.ConceptService;
-import org.openmrs.api.EncounterService;
 import org.openmrs.api.context.Context;
-import org.openmrs.module.ohrireports.reports.datasetdefinition.TXCurrDataSetDefinition;
-import org.openmrs.module.ohrireports.reports.library.EncounterDataLibrary;
-import org.openmrs.module.ohrireports.reports.library.PatientDataLibrary;
+import org.openmrs.module.ohrireports.reports.datasetdefinition.HtsNewDataSetDefinition;
+import org.openmrs.module.ohrireports.reports.datasetdefinition.HtsNewDataSetDefinitionAdx;
 import org.openmrs.module.reporting.evaluation.parameter.Mapped;
 import org.openmrs.module.reporting.evaluation.parameter.Parameter;
 import org.openmrs.module.reporting.evaluation.parameter.Parameterizable;
@@ -30,32 +24,20 @@ import org.openmrs.module.reporting.report.ReportDesign;
 import org.openmrs.module.reporting.report.ReportRequest;
 import org.openmrs.module.reporting.report.definition.ReportDefinition;
 import org.openmrs.module.reporting.report.manager.ReportManager;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import static org.openmrs.module.ohrireports.OHRIReportsConstants.HTS_FOLLOW_UP_ENCOUNTER_TYPE;
 
 @Component
-public class TX_CUR_Report implements ReportManager {
-	
-	@Autowired
-	EncounterService encounterService;
-	
-	@Autowired
-	ConceptService conceptService;
-	
-	@Autowired
-	PatientDataLibrary hpdl;
-	
-	@Autowired
-	EncounterDataLibrary hedl;
+public class TX_New_ReportAdx implements ReportManager {
 	
 	@Override
 	public String getUuid() {
-		return "e1543c2e-0d81-11ed-861d-0242ac120002";
+		return "5f1e54f3-d171-4a41-861c-304f240d618b";
 	}
 	
 	@Override
 	public String getName() {
-		return "TX CURR";
+		return "TX New ADX";
 	}
 	
 	@Override
@@ -65,12 +47,15 @@ public class TX_CUR_Report implements ReportManager {
 	
 	@Override
 	public List<Parameter> getParameters() {
-		
-		Parameter endDate = new Parameter("endDate", "On Month", Date.class);
-		endDate.setRequired(true);
+		Parameter startDate = new Parameter("startDate", "Start Date", Date.class);
+		startDate.setRequired(false);
+		Parameter startDateGC = new Parameter("startDateGC", " ", Date.class);
+		startDateGC.setRequired(false);
+		Parameter endDate = new Parameter("endDate", "End Date", Date.class);
+		endDate.setRequired(false);
 		Parameter endDateGC = new Parameter("endDateGC", " ", Date.class);
-		endDateGC.setRequired(true);
-		return Arrays.asList(endDate, endDateGC);
+		endDateGC.setRequired(false);
+		return Arrays.asList(startDate, startDateGC, endDate, endDateGC);
 		
 	}
 	
@@ -80,13 +65,14 @@ public class TX_CUR_Report implements ReportManager {
 		reportDefinition.setUuid(getUuid());
 		reportDefinition.setName(getName());
 		reportDefinition.setDescription(getDescription());
-		
 		reportDefinition.setParameters(getParameters());
-		TXCurrDataSetDefinition txCurrDataSetDefinition = new TXCurrDataSetDefinition();
-		txCurrDataSetDefinition.addParameters(getParameters());
-		txCurrDataSetDefinition.setEncounterType(Context.getEncounterService().getEncounterTypeByUuid(
+		
+		HtsNewDataSetDefinitionAdx htsNewDataSetDefinition = new HtsNewDataSetDefinitionAdx();
+		htsNewDataSetDefinition.addParameters(getParameters());
+		htsNewDataSetDefinition.setEncounterType(Context.getEncounterService().getEncounterTypeByUuid(
 		    HTS_FOLLOW_UP_ENCOUNTER_TYPE));
-		reportDefinition.addDataSetDefinition("Tx-Curr", map(txCurrDataSetDefinition, "endDate=${endDateGC}"));
+		reportDefinition.addDataSetDefinition("TX-New Aggregate by Age and Gender",
+		    map(htsNewDataSetDefinition, "startDate=${startDateGC},endDate=${endDateGC}"));
 		return reportDefinition;
 	}
 	
@@ -101,14 +87,17 @@ public class TX_CUR_Report implements ReportManager {
 	}
 	
 	@Override
-	public List<ReportDesign> constructReportDesigns(ReportDefinition reportDefinition){
+	public List<ReportDesign> constructReportDesigns(ReportDefinition reportDefinition) {
+		// ReportDesign design =
+		// ReportManagerUtil.createCsvReportDesign(HTS_REPORT_DESIGN_UUID,
+		// reportDefinition);
 		
-		return new ArrayList<>();
+		return null;
 	}
 	
 	@Override
 	public List<ReportRequest> constructScheduledRequests(ReportDefinition reportDefinition) {
-		return new ArrayList<>();
+		return null;
 	}
 	
 	@Override

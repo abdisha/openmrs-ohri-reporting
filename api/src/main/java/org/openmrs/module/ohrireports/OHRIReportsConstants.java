@@ -68,7 +68,8 @@ public class OHRIReportsConstants {
 	
 	public final static String RETURN_VISIT_DATE = "5096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 	
-	public final static String POSITIVE = "6378487b-584d-4422-a6a6-56c8830873ff";
+	//public final static String POSITIVE = "6378487b-584d-4422-a6a6-56c8830873ff";
+	public final static String POSITIVE = "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 	
 	public final static String NEGATIVE = "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 	

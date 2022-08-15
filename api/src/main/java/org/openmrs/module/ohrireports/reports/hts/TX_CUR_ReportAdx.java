@@ -19,7 +19,7 @@ import java.util.List;
 import org.openmrs.api.ConceptService;
 import org.openmrs.api.EncounterService;
 import org.openmrs.api.context.Context;
-import org.openmrs.module.ohrireports.reports.datasetdefinition.TXCurrDataSetDefinition;
+import org.openmrs.module.ohrireports.reports.datasetdefinition.TXCurrDataSetDefinitionAdx;
 import org.openmrs.module.ohrireports.reports.library.EncounterDataLibrary;
 import org.openmrs.module.ohrireports.reports.library.PatientDataLibrary;
 import org.openmrs.module.reporting.evaluation.parameter.Mapped;
@@ -34,7 +34,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TX_CUR_Report implements ReportManager {
+public class TX_CUR_ReportAdx implements ReportManager {
 	
 	@Autowired
 	EncounterService encounterService;
@@ -50,12 +50,12 @@ public class TX_CUR_Report implements ReportManager {
 	
 	@Override
 	public String getUuid() {
-		return "e1543c2e-0d81-11ed-861d-0242ac120002";
+		return "4e79374e-b8a0-455e-a571-a9a9a801f113";
 	}
 	
 	@Override
 	public String getName() {
-		return "TX CURR";
+		return "TX CURR ADX";
 	}
 	
 	@Override
@@ -82,11 +82,12 @@ public class TX_CUR_Report implements ReportManager {
 		reportDefinition.setDescription(getDescription());
 		
 		reportDefinition.setParameters(getParameters());
-		TXCurrDataSetDefinition txCurrDataSetDefinition = new TXCurrDataSetDefinition();
+		TXCurrDataSetDefinitionAdx txCurrDataSetDefinition = new TXCurrDataSetDefinitionAdx();
 		txCurrDataSetDefinition.addParameters(getParameters());
 		txCurrDataSetDefinition.setEncounterType(Context.getEncounterService().getEncounterTypeByUuid(
 		    HTS_FOLLOW_UP_ENCOUNTER_TYPE));
-		reportDefinition.addDataSetDefinition("Tx-Curr", map(txCurrDataSetDefinition, "endDate=${endDateGC}"));
+		reportDefinition.addDataSetDefinition("Tx-Curr Aggregate by Age and Gender",
+		    map(txCurrDataSetDefinition, "endDate=${endDateGC}"));
 		return reportDefinition;
 	}
 	
